@@ -1,0 +1,13 @@
+mixin footer(options)
+
+    footer.footer.pt-10.pb-5.mt-auto(class=options.footerBg, class=options.footerStyle)
+
+        if block
+            block
+        else
+            .container
+                .row.align-items-center
+                    .col-md-6.small
+                        | Copyright &copy; Músicas para Missa 2020
+                    .col-md-6.text-md-right.small
+                        a(href='/politica-de-privacidade/') Política de Privacidade
