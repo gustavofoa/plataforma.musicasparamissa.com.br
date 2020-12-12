@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0244b63b-4121-42d0-af29-8cf9e151d905" name="Default Changelist" comment="Fix buildspec.yml">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="0244b63b-4121-42d0-af29-8cf9e151d905" name="Default Changelist" comment="Ignore .idea folder">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pug/pages/promocao-de-natal.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pug/pages/promocao-de-natal.pug" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +64,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1607718807710</updated>
-      <workItem from="1607718808852" duration="9486000" />
+      <workItem from="1607718808852" duration="11331000" />
     </task>
     <task id="LOCAL-00001" summary="First commit.">
       <created>1607728534437</created>
@@ -93,7 +94,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607730355344</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Ignore .idea folder">
+      <created>1607730396586</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1607730396586</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -116,6 +124,7 @@
     <MESSAGE value="Add buildspec.yml" />
     <MESSAGE value="Remove --delete" />
     <MESSAGE value="Fix buildspec.yml" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix buildspec.yml" />
+    <MESSAGE value="Ignore .idea folder" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ignore .idea folder" />
   </component>
 </project>
