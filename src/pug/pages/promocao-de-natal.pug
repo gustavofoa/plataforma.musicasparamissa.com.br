@@ -27,8 +27,7 @@ block content
         .page-header-content.mb-n5
             .container
                 .row.justify-content-center
-                    .col-xl-9.col-lg-10.text-center(data-aos='fade')
-
+                    .col-xl-9.col-lg-10.text-center(data-aos='fade', data-aos-delay='100')
                         h1.page-header-title.title Promoção de Natal da<br/>Plataforma Minhas Músicas para Missa
                         h2.text-dark(style="padding:0.5rem;") <span style="background-color: #FF0; padding: 0.5rem;">50% OFF na primeira anuidade!</span>
 
@@ -76,7 +75,7 @@ block content
     })
 
         .container
-            .device-laptop.text-gray-200.mt-n10(data-aos='fade-up')
+            .device-laptop.text-gray-200.mt-n10(data-aos='fade-left', data-aos-delay='500')
                 svg.device-container(xmlns='http://www.w3.org/2000/svg', fill='currentColor', viewBox='83.911 298.53 426.962 243.838')
                     path(d='M474.843 516.208V309.886c0-6.418-4.938-11.355-11.354-11.355H131.791c-6.417 0-11.354 4.938-11.354 11.355v206.816H83.911v13.326c4.938 7.896 31.098 12.34 40.969 12.34h345.024c10.366 0 36.526-4.936 40.969-12.34v-13.326h-36.03v-.494zM134.26 313.341h326.762v203.361H134.26V313.341z')
                 img.device-screenshot(src='assets/img/imagem-repertorio-plataforma.png')
@@ -96,7 +95,7 @@ block content
         .page-header-content
             .container
                 .row.justify-content-center
-                    .col-xl-8.col-lg-10.text-center(data-aos='fade')
+                    .col-xl-8.col-lg-10.text-center(data-aos='fade-right', data-aos-delay='300')
                         h1.display-4 Com a plataforma Minhas Músicas para Missa ...
                         p(style="text-align: justify;") Você vai criar repertórios de uma maneira muito fácil e ágil e que podem facilmente ser enviados para todos do seu grupo de canto, pois assim, mesmo com a correria do dia-a-dia e as tarefas diárias que não cessam, você e seu grupo podem por exemplo ouvir e ir aprendendo uma música nova enquanto lava a louça, ou faz qualquer outra atividade corriqueira.
                         p(style="text-align: justify;") Veja no video como é fácil criar o seu repertório e usar a sua pasta de músicas.
@@ -176,21 +175,21 @@ block content
                             img(src='https://minhas.musicasparamissa.com.br/cursos/violao-iniciante/capa-curso-small.png', style="width: 80%;")
                             h5(style="padding-top: 1rem;") Violão para iniciantes
                             p.card-text.small.text-primary Para você que sempre quis aprender esse instrumento. Chegou a hora! Um curso completo com apostila pra você estar apto à tocar violão na missa.
-                .col-lg-4.col-md-6.mb-5(data-aos='fade-up', data-aos-delay='50')
+                .col-lg-4.col-md-6.mb-5(data-aos='fade-up', data-aos-delay='100')
                     a.card.text-center.text-decoration-none.h-100.lift(href='#!')
                         .card-body.py-5
                             img(src='https://minhas.musicasparamissa.com.br/cursos/liturgia-para-musicos/capa-curso-small.png', style="width: 80%;")
                             h5(style="padding-top: 1rem;") Liturgia para Músicos
                             p.card-text.small.text-primary Um curso completo para você conhecer de uma forma mais aprofundada sobre música e liturgia.
                             p.card-text.small.text-primary Parceria Músicas para Missa e Comunidade Recado
-                .col-lg-4.col-md-6.mb-5(data-aos='fade-up', data-aos-delay='100')
+                .col-lg-4.col-md-6.mb-5(data-aos='fade-up', data-aos-delay='200')
                     a.card.text-center.text-decoration-none.h-100.lift(href='#!')
                         .card-body.py-5
                             img(src='https://minhas.musicasparamissa.com.br/cursos/teoria-musical/capa-curso-small.png', style="width: 80%;")
                             h5(style="padding-top: 1rem;") Teoria Musical
                             p.card-text.small.text-primary Conhecer teoria músical é de extrema importância para você dominar altura dos sons, figuras rítmicas, notas musicais, etc
                             p.card-text.small.text-primary Parceria Músicas para Missa e Comunidade Recado
-                .col-lg-4.col-md-6.mb-5(data-aos='fade-up', data-aos-delay='150')
+                .col-lg-4.col-md-6.mb-5(data-aos='fade-up', data-aos-delay='300')
                     a.card.text-center.text-decoration-none.h-100.lift(href='#!')
                         .card-body.py-5
                             img(src='https://minhas.musicasparamissa.com.br/cursos/artistas-nas-maos-de-deus/capa-curso-small.png', style="width: 80%;")
@@ -208,7 +207,7 @@ block content
         svgBorderAngled: false,
         svgBorderRounded: false,
         svgBorderWaves: true,
-        svgBorderFill: 'text-dark'
+        svgBorderFill: 'text-white'
     })
 
         .container
@@ -240,6 +239,94 @@ block content
                             p.small.mb-0 Baixar os nossos e-books especiais sobre música e liturgia
 
             a.btn.btn-xl.btn-primary.text-white.btn-block.rounded-pill.mt-5(href="https://minhas.musicasparamissa.com.br/pagamento") QUERO APROVEITAR A PROMOÇÃO DE NATAL!
+
+
+    include mixins/section.pug
+    +section({
+        sectionBg: 'bg-white',
+        sectionPadding: 'py-10',
+        svgBorderAngled: true,
+        svgBorderRounded: false,
+        svgBorderWaves: false,
+        svgBorderFill: 'text-light'
+    })
+
+        .container
+            .row.align-items-center.justify-content-center
+
+                .col-lg-9(data-aos='slide-up')
+                    .mb-5
+                        h1.page-header-title.text-center.display-4 Inspiração ...
+                        p.lead
+                            | Diariamente recebemos mensagens de carinho que nos inspiram a continuar este trabalho, sempre melhorando e criando novas ferramentas e conteúdos para ajudar você a prestar o melhor serviço musical na liturgia das Missas.
+                        p.lead
+                            | Veja algumas delas ...
+
+                .col-lg-9(data-aos='slide-right')
+                    .mb-5
+                        img.img-fluid.content-skewed-item.shadow-lg.rounded-lg(src="assets/img/testemunhos/1.png" width="100%")
+                .col-lg-9(data-aos='slide-left')
+                    .mb-5
+                        img.img-fluid.content-skewed-item.shadow-lg.rounded-lg(src="assets/img/testemunhos/2.png")
+                .col-lg-9(data-aos='slide-right')
+                    .mb-5
+                        img.img-fluid.content-skewed-item.shadow-lg.rounded-lg(src="assets/img/testemunhos/3.png")
+                .col-lg-9(data-aos='slide-left')
+                    .mb-5
+                        img.img-fluid.content-skewed-item.shadow-lg.rounded-lg(src="assets/img/testemunhos/4.jpeg")
+                .col-lg-9(data-aos='slide-right')
+                    .mb-5
+                        img.img-fluid.content-skewed-item.shadow-lg.rounded-lg(src="assets/img/testemunhos/5.png")
+                .col-lg-9(data-aos='slide-left')
+                    .mb-5
+                        img.img-fluid.content-skewed-item.shadow-lg.rounded-lg(src="assets/img/testemunhos/6.png")
+                .col-lg-9(data-aos='slide-right')
+                    .mb-5
+                        img.img-fluid.content-skewed-item.shadow-lg.rounded-lg(src="assets/img/testemunhos/7.png")
+                .col-lg-9(data-aos='slide-left')
+                    .mb-5
+                        img.img-fluid.content-skewed-item.shadow-lg.rounded-lg(src="assets/img/testemunhos/8.png")
+                .col-lg-9(data-aos='slide-right')
+                    .mb-5
+                        img.img-fluid.content-skewed-item.shadow-lg.rounded-lg(src="assets/img/testemunhos/9.png")
+                .col-lg-9(data-aos='slide-left')
+                    .mb-5
+                        img.img-fluid.content-skewed-item.shadow-lg.rounded-lg(src="assets/img/testemunhos/10.png")
+                .col-lg-9(data-aos='slide-right')
+                    .mb-5
+                        img.img-fluid.content-skewed-item.shadow-lg.rounded-lg(src="assets/img/testemunhos/11.jpeg")
+
+
+
+
+    include mixins/section.pug
+    +section({
+        sectionBg: 'bg-light',
+        sectionPadding: 'py-10',
+        svgBorderAngled: false,
+        svgBorderRounded: false,
+        svgBorderWaves: true,
+        svgBorderFill: 'text-dark'
+    })
+
+        .container
+            .row.justify-content-center
+
+                .col-9(data-aos='slide-up')
+                    .mb-4
+                        .content-skewed.content-skewed-left
+                            img.img-fluid.content-skewed-item.shadow-lg.rounded-lg(src='assets/img/promocao/natal.png')
+
+                .col-8(data-aos='slide-left' style="padding-top: 4rem;font-size:1.4rem;")
+                    .mb-5
+                        p Assinando a plataforma hoje você aproveita o desconto de <span style="background-color: #FF0;">50% OFF</span> no valor da primeira anuidade primeira anuidade!
+                        p Nesta promoção, ao invés de pagar <del>R$ 139,90</del> o primeiro ano de acesso está custando só <strong>R$ 69,95</strong>.
+
+                .col-9(data-aos='fade')
+                    a.btn.btn-xl.btn-primary.text-white.btn-block.rounded-pill.mt-5(href="https://minhas.musicasparamissa.com.br/pagamento") QUERO APROVEITAR A PROMOÇÃO DE NATAL!
+
+
+
 
 
 
