@@ -1,0 +1,377 @@
+extends ../layouts/default.pug
+
+block config
+
+    - var pageTitle = 'Plataforma Minhas Músicas para Missa'
+
+append css
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/lity/2.4.0/lity.min.css')
+    link(rel='stylesheet', href='https://unpkg.com/aos@next/dist/aos.css')
+
+block content
+
+    // - * * * * * * * * * *
+    // - * * Page Header * *
+    // - * * * * * * * * * *
+
+    include mixins/header.pug
+    +header({
+        pageHeaderBg: 'bg-gradient-primary-to-secondary',
+        pageHeaderStyle: 'page-header-dark',
+        svgBorderAngled: false,
+        svgBorderRounded: false,
+        svgBorderWaves: true,
+        svgBorderFill: 'text-light'
+    })
+
+        .page-header-content.mb-n5
+            .container
+                .row.justify-content-center
+                    .col-xl-9.col-lg-10.text-center(data-aos='fade', data-aos-delay='100')
+                        h1.page-header-title.title Inscrições abetas para a<br/>Plataforma Minhas Músicas para Missa
+
+                        .video
+                            .video-container
+                                iframe(width="100%" height="450" src="https://player.vimeo.com/video/499557856" frameborder="0" allowfullscreen="")
+
+                        a.btn.btn-xl.btn-white.text-primary.btn-block.rounded-pill.mt-5(href="https://minhas.musicasparamissa.com.br/pagamento") QUERO ASSINAR AGORA!
+
+
+    //- * * * * * * * * * * * * * * *
+    //- * * O que é a Plataforma  * *
+    //- * * * * * * * * * * * * * * *
+
+    include mixins/header.pug
+    +header({
+        pageHeaderBg: 'bg-light',
+        pageHeaderStyle: 'page-header-light',
+        svgBorderAngled: false,
+        svgBorderRounded: false,
+        svgBorderWaves: true,
+        svgBorderFill: 'text-light',
+    })
+
+        .page-header-content
+            .container
+                .row.justify-content-center
+                    .col-xl-8.col-lg-10.text-center(data-aos='fade')
+                        h1.display-4 Mas o que é a PLATAFORMA MINHAS MÚSICAS PARA MISSA?
+                        p Uma ferramenta completa com TUDO que precisa para prestar o melhor serviço musical na missa!
+
+
+    //- * * * * * * * * * * * *
+    //- * * Device Preview  * *
+    //- * * * * * * * * * * * *
+
+    include mixins/section.pug
+    +section({
+        sectionBg: 'bg-light',
+        sectionPadding: 'pb-10 pt-1',
+        svgBorderAngled: true,
+        svgBorderRounded: false,
+        svgBorderWaves: false,
+        svgBorderFill: 'text-white'
+    })
+
+        .container
+            .device-laptop.text-gray-200.mt-n10(data-aos='fade-left', data-aos-delay='500')
+                svg.device-container(xmlns='http://www.w3.org/2000/svg', fill='currentColor', viewBox='83.911 298.53 426.962 243.838')
+                    path(d='M474.843 516.208V309.886c0-6.418-4.938-11.355-11.354-11.355H131.791c-6.417 0-11.354 4.938-11.354 11.355v206.816H83.911v13.326c4.938 7.896 31.098 12.34 40.969 12.34h345.024c10.366 0 36.526-4.936 40.969-12.34v-13.326h-36.03v-.494zM134.26 313.341h326.762v203.361H134.26V313.341z')
+                img.device-screenshot(src='assets/img/imagem-repertorio-plataforma.png')
+
+
+
+    include mixins/section.pug
+    +section({
+        sectionBg: 'bg-white',
+        sectionPadding: 'pb-10 pt-1',
+        svgBorderAngled: false,
+        svgBorderRounded: false,
+        svgBorderWaves: true,
+        svgBorderFill: 'text-light'
+    })
+
+        .page-header-content
+            .container
+                .row.justify-content-center
+                    .col-xl-8.col-lg-10.text-center(data-aos='fade-right', data-aos-delay='300')
+                        h1.display-4 Com a plataforma Minhas Músicas para Missa ...
+                        p(style="text-align: justify;") Você vai criar repertórios de uma maneira muito fácil e ágil e que podem facilmente ser enviados para todos do seu grupo de canto, pois assim, mesmo com a correria do dia-a-dia e as tarefas diárias que não cessam, você e seu grupo podem por exemplo ouvir e ir aprendendo uma música nova enquanto lava a louça, ou faz qualquer outra atividade corriqueira.
+                        p(style="text-align: justify;") Veja no video como é fácil criar o seu repertório e usar a sua pasta de músicas.
+                .row.justify-content-center.z-1
+                    .col-lg-8(data-aos='fade-up')
+
+                        .video
+                            .video-container
+                                iframe(width="100%" height="450" src="https://player.vimeo.com/video/490963878" frameborder="0" allowfullscreen="")
+
+                        //.card.lift.mb-n15
+                        //    .card-body.p-2
+                        //        .video.overlay.bg-img-cover.rounded(style='background-image: url("assets/img/login-plataforma.png")')
+                        //            a.video-link(href='assets/video/repertorio-minhas-musicas.mp4', data-lity='')
+                        //                i.fas.fa-play
+
+
+
+
+    //- * * * * * * * * * *
+    //- * * Page Header * *
+    //- * * * * * * * * * *
+
+    include mixins/section.pug
+    +section({
+        sectionBg: 'bg-light',
+        sectionPadding: 'py-10',
+        svgBorderAngled: true,
+        svgBorderRounded: false,
+        svgBorderWaves: false,
+        svgBorderFill: 'text-primary'
+    })
+
+        .page-header-content.mb-n5
+            .container
+                .row.justify-content-center.align-items-center
+                    .col-lg-6(data-aos='fade-right')
+                        h1.page-header-title Diga adeus aos papéis!
+                        p.page-header-text.mb-5 Com a plataforma <strong>Minhas Músicas para Missa</strong> você tem tudo que você precisa na palma da sua mão e não precisará mais de papéis para tocar e cantar a missa.
+                        .row-lg.text-center(data-aos='fade-up', data-aos-delay='500')
+                            a.btn.btn-primary.btn-xl.text-white.rounded-pill(href="https://minhas.musicasparamissa.com.br/pagamento") QUERO ASSINAR A PLATAFORMA!
+                    .col-lg-6.z-1(data-aos='fade-left')
+                        .device-wrapper.mx-auto.mb-n15
+                            .device(data-device='iPhoneX', data-orientation='portrait', data-color='black')
+                                .screen
+                                    img(src='assets/img/inscricoes-gratuitas-minhas-mpm.png').img-fluid.z-1
+
+
+
+    //- * * ** * * * * *
+    //- * * Cursos * * *
+    //- * * ** * * * * *
+
+    include mixins/header.pug
+    +header({
+        pageHeaderBg: 'bg-img-repeat bg-primary',
+        pageHeaderBgImg: 'background-image: url("assets/img/pattern-shapes.png")',
+        pageHeaderStyle: 'page-header-dark',
+        svgBorderAngled: false,
+        svgBorderRounded: true,
+        svgBorderWaves: false,
+        svgBorderFill: 'text-light'
+    })
+
+        .container
+            .row.justify-content-center
+                .col-lg-9
+                    .text-center
+                        h1.page-header-title.display-4 BÔNUS!
+                        h2.page-header-text.display-5 Cursos de música e liturgia para você prestar o MELHOR serviço de música litúrgica na missa!
+            .row
+                .col-lg-6.col-md-6.mb-5(data-aos='fade-right')
+                    a.card.text-center.text-decoration-none.h-100.lift(href='#!')
+                        .card-body.py-5
+                            img(src='https://minhas.musicasparamissa.com.br/cursos/workshop-de-musica-liturgica/capa-curso-medium.jpg', style="width: 80%;")
+                            h5(style="padding-top: 1rem;") Workshop de Música Litúrgica
+                            p.card-text.small.text-primary Saiba a identificar se uma música é ou não litúrgica e qual pode ser tocada ou não em cada momento da missa.
+                .col-lg-6.col-md-6.mb-5(data-aos='fade-left')
+                    a.card.text-center.text-decoration-none.h-100.lift(href='#!')
+                        .card-body.py-5
+                            img(src='https://minhas.musicasparamissa.com.br/cursos/violao-iniciante/capa-curso-small.png', style="width: 80%;")
+                            h5(style="padding-top: 1rem;") Violão para iniciantes
+                            p.card-text.small.text-primary Para você que sempre quis aprender esse instrumento. Chegou a hora! Um curso completo com apostila pra você estar apto à tocar violão na missa.
+                .col-lg-4.col-md-6.mb-5(data-aos='fade-up', data-aos-delay='100')
+                    a.card.text-center.text-decoration-none.h-100.lift(href='#!')
+                        .card-body.py-5
+                            img(src='https://minhas.musicasparamissa.com.br/cursos/liturgia-para-musicos/capa-curso-small.png', style="width: 80%;")
+                            h5(style="padding-top: 1rem;") Liturgia para Músicos
+                            p.card-text.small.text-primary Um curso completo para você conhecer de uma forma mais aprofundada sobre música e liturgia.
+                            p.card-text.small.text-primary Parceria Músicas para Missa e Comunidade Recado
+                .col-lg-4.col-md-6.mb-5(data-aos='fade-up', data-aos-delay='200')
+                    a.card.text-center.text-decoration-none.h-100.lift(href='#!')
+                        .card-body.py-5
+                            img(src='https://minhas.musicasparamissa.com.br/cursos/teoria-musical/capa-curso-small.png', style="width: 80%;")
+                            h5(style="padding-top: 1rem;") Teoria Musical
+                            p.card-text.small.text-primary Conhecer teoria músical é de extrema importância para você dominar altura dos sons, figuras rítmicas, notas musicais, etc
+                            p.card-text.small.text-primary Parceria Músicas para Missa e Comunidade Recado
+                .col-lg-4.col-md-6.mb-5(data-aos='fade-up', data-aos-delay='300')
+                    a.card.text-center.text-decoration-none.h-100.lift(href='#!')
+                        .card-body.py-5
+                            img(src='https://minhas.musicasparamissa.com.br/cursos/artistas-nas-maos-de-deus/capa-curso-small.png', style="width: 80%;")
+                            h5(style="padding-top: 1rem;") Artistas nas Mãos de Deus
+                            p.card-text.small.text-primary Uma palestra que te mostra como colocar os seus dons a serviço do plano de salvação de Deus.
+                            p.card-text.small.text-primary Parceria Músicas para Missa e Comunidade Recado
+
+
+
+
+    include mixins/section.pug
+    +section({
+        sectionBg: 'bg-light',
+        sectionPadding: 'py-10',
+        svgBorderAngled: false,
+        svgBorderRounded: false,
+        svgBorderWaves: true,
+        svgBorderFill: 'text-white'
+    })
+
+        .container
+            .row.align-items-center.justify-content-center
+
+                .col-md-9.col-lg-6(data-aos='slide-right')
+                    .mb-4
+                        .content-skewed.content-skewed-right
+                            img.img-fluid.content-skewed-item.shadow-lg.rounded-lg(src='assets/img/mp3-playback-salmos.png')
+
+                .col-lg-6
+                    .mb-5
+                        h2 Mas não é só isso!
+                        p.lead
+                            | Além da ferramenta para você criar os seus repertórios e os cursos você também terá acesso à ...
+                    .row
+                        .col-md-6.mb-4
+                            h6 Sua própria pasta de músicas
+                            p.mb-2.small Você terá a sua própria pasta virtual de músicas personalizada, organizadas do seu jeito na núvem!
+                        .col-md-6.mb-4
+                            h6 Download de MP3 e Playback
+                            p.mb-2.small.mb-0 Você poderá baixar os MP3 de salmos e músicas de composição da nossa equipe.
+                    .row
+                        .col-md-6.mb-4
+                            h6 Tira dúvidas
+                            p.mb-2.small.mb-0 Tirar as suas dúvidas sobre música litúrgica com a gente.
+                        .col-md-6.mb-4
+                            h6 Catálogo de músicas
+                            p.small.mb-0 Acesso à todas as músicas do site com letra, cifra, informações e vídeo.
+
+            a.btn.btn-xl.btn-primary.text-white.btn-block.rounded-pill.mt-5(href="https://minhas.musicasparamissa.com.br/pagamento") QUERO ASSINAR A PLATAFORMA!
+
+
+
+    include mixins/section.pug
+    +section({
+        sectionBg: 'bg-white',
+        sectionPadding: 'py-10',
+        svgBorderAngled: true,
+        svgBorderRounded: false,
+        svgBorderWaves: false,
+        svgBorderFill: 'text-light'
+    })
+
+        .page-header-content.mb-n5
+            .container
+                .row.justify-content-center.align-items-center
+                    .col-lg-9(data-aos='fade-right')
+                        h1.page-header-title Sem risco!
+                        p.page-header-text.mb-5 <strong>Garantia Incondicional até 15 dias</strong> – se por qualquer motivo você não achar que este foi o <strong>melhor investimento</strong> em ferramentas e conhecimento para você prestar o melhor serviço como músico litúrgico na missa, basta você nos enviar um e-mail e nós devolveremos todo seu dinheiro investido o mais rápido possível, sem ressentimentos e sem enrolação.
+                    .col-lg-3.z-1(data-aos='fade-left')
+                        img(src='assets/img/money-back-logo.png').img-fluid.z-1
+
+
+
+
+
+    include mixins/section.pug
+    +section({
+        sectionBg: 'bg-light',
+        sectionPadding: 'py-10',
+        svgBorderAngled: false,
+        svgBorderRounded: false,
+        svgBorderWaves: true,
+        svgBorderFill: 'text-dark'
+    })
+
+        .container
+            .row.align-items-center.justify-content-center
+
+                .col-lg-9(data-aos='slide-up')
+                    .mb-5
+                        h1.page-header-title.text-center.display-4 Inspiração ...
+                        p.lead
+                            | Diariamente recebemos mensagens de carinho que nos inspiram a continuar este trabalho, sempre melhorando e criando novas ferramentas e conteúdos para ajudar você a prestar o melhor serviço musical na liturgia das Missas.
+                        p.lead
+                            | Veja algumas delas ...
+
+                .col-lg-9(data-aos='slide-right')
+                    .mb-5
+                        img.img-fluid.content-skewed-item.shadow-lg.rounded-lg(src="assets/img/testemunhos/1.png" width="100%")
+                .col-lg-9(data-aos='slide-left')
+                    .mb-5
+                        img.img-fluid.content-skewed-item.shadow-lg.rounded-lg(src="assets/img/testemunhos/2.png")
+                .col-lg-9(data-aos='slide-right')
+                    .mb-5
+                        img.img-fluid.content-skewed-item.shadow-lg.rounded-lg(src="assets/img/testemunhos/3.png")
+                .col-lg-9(data-aos='slide-left')
+                    .mb-5
+                        img.img-fluid.content-skewed-item.shadow-lg.rounded-lg(src="assets/img/testemunhos/4.jpeg")
+                .col-lg-9(data-aos='slide-right')
+                    .mb-5
+                        img.img-fluid.content-skewed-item.shadow-lg.rounded-lg(src="assets/img/testemunhos/5.png")
+                .col-lg-9(data-aos='slide-left')
+                    .mb-5
+                        img.img-fluid.content-skewed-item.shadow-lg.rounded-lg(src="assets/img/testemunhos/6.png")
+                .col-lg-9(data-aos='slide-right')
+                    .mb-5
+                        img.img-fluid.content-skewed-item.shadow-lg.rounded-lg(src="assets/img/testemunhos/7.png")
+                .col-lg-9(data-aos='slide-left')
+                    .mb-5
+                        img.img-fluid.content-skewed-item.shadow-lg.rounded-lg(src="assets/img/testemunhos/8.png")
+                .col-lg-9(data-aos='slide-right')
+                    .mb-5
+                        img.img-fluid.content-skewed-item.shadow-lg.rounded-lg(src="assets/img/testemunhos/9.png")
+                .col-lg-9(data-aos='slide-left')
+                    .mb-5
+                        img.img-fluid.content-skewed-item.shadow-lg.rounded-lg(src="assets/img/testemunhos/10.png")
+                .col-lg-9(data-aos='slide-right')
+                    .mb-5
+                        img.img-fluid.content-skewed-item.shadow-lg.rounded-lg(src="assets/img/testemunhos/11.jpeg")
+
+
+
+
+    //include mixins/section.pug
+    //+section({
+    //    sectionBg: 'bg-light',
+    //    sectionPadding: 'py-10',
+    //    svgBorderAngled: false,
+    //    svgBorderRounded: false,
+    //    svgBorderWaves: true,
+    //    svgBorderFill: 'text-dark'
+    //})
+    //
+    //    .container
+    //        .row.justify-content-center
+    //
+    //            .col-9(data-aos='slide-up')
+    //                .mb-4
+    //                    .content-skewed.content-skewed-left
+    //                        img.img-fluid.content-skewed-item.shadow-lg.rounded-lg(src='assets/img/promocao/natal.png')
+    //
+    //            .col-8(data-aos='slide-left' style="padding-top: 4rem;font-size:1.4rem;")
+    //                .mb-5
+    //                    p Assinando a plataforma hoje você aproveita o desconto de <span style="background-color: #FF0;">50% OFF</span> no valor da primeira anuidade primeira anuidade!
+    //                    p Nesta promoção, ao invés de pagar <del>R$ 139,90</del> o primeiro ano de acesso está custando só <strong>R$ 69,95</strong>.
+    //
+    //            .col-9(data-aos='fade')
+    //                a.btn.btn-xl.btn-primary.text-white.btn-block.rounded-pill.mt-5(href="https://minhas.musicasparamissa.com.br/pagamento") QUERO APROVEITAR A PROMOÇÃO DE NATAL!
+
+
+
+
+
+
+
+block footer
+
+    include mixins/footer.pug
+    +footer({
+        footerBg: 'bg-dark',
+        footerStyle: 'footer-dark'
+    })
+
+append scripts
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/lity/2.4.0/lity.min.js')
+    script(src='https://unpkg.com/aos@next/dist/aos.js')
+    script.
+        AOS.init({
+            disable: 'mobile',
+            duration: 600,
+            once: true
+        });
