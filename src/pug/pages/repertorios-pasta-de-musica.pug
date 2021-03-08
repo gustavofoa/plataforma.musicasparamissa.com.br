@@ -1,0 +1,62 @@
+extends ../layouts/default.pug
+
+block config
+
+    - var pageTitle = 'Repertórios e pasta de músicas na Plataforma Minhas Músicas para Missa'
+
+append css
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/lity/2.4.0/lity.min.css')
+    link(rel='stylesheet', href='https://unpkg.com/aos@next/dist/aos.css')
+
+block content
+
+    // - * * * * * * * * * *
+    // - * * Page Header * *
+    // - * * * * * * * * * *
+
+    include mixins/header.pug
+    +header({
+        pageHeaderBg: 'bg-gradient-primary-to-secondary',
+        pageHeaderStyle: 'page-header-dark',
+        svgBorderAngled: false,
+        svgBorderRounded: false,
+        svgBorderWaves: true,
+        svgBorderFill: 'text-dark'
+    })
+
+        .page-header-content.mb-n5
+            .container
+                .row.justify-content-center
+                    .col-xl-9.col-lg-10.text-center(data-aos='fade', data-aos-delay='100')
+                        h1.page-header-title.title Como criar Repertórios e <br />minha própria pasta de músicas na<br/>Plataforma Minhas Músicas para Missa
+
+                        .video
+                            .video-container
+                                iframe(width="100%" height="450" src="https://player.vimeo.com/video/490963878" frameborder="0" allowfullscreen="")
+
+                        a.btn.btn-xl.btn-white.text-primary.btn-block.rounded-pill.mt-5(href="https://minhas.musicasparamissa.com.br/") ACESSAR PLATAFORMA PARA CRIAR MEU REPERTÓRIO
+
+
+
+
+
+
+
+
+block footer
+
+    include mixins/footer.pug
+    +footer({
+        footerBg: 'bg-dark',
+        footerStyle: 'footer-dark'
+    })
+
+append scripts
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/lity/2.4.0/lity.min.js')
+    script(src='https://unpkg.com/aos@next/dist/aos.js')
+    script.
+        AOS.init({
+            disable: 'mobile',
+            duration: 600,
+            once: true
+        });
